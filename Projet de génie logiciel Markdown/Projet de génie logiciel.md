@@ -23,7 +23,7 @@ User stories :
 		je ne veux pas qu'un autre appareil soit connecté en même tant
 		que celui utilisé 
 		
- - Portefeuille 
+- Portefeuille 
     - En tant que client connecté,
     		je veux pouvoir consulter mon portefeuille financier
     		je veux pouvoir désactiver/réactiver des produits 
@@ -36,8 +36,53 @@ User stories :
     - En tant que client ouvrant mon portefeuille, 
     		je veux être averti lors d'une souscription à un nouveau produit
     		ou si l'institution décide de supprimer un produit dont je suis titulaire
-    - En tant que 
-    - 
+
+	Fonctionnalité de modification du portefeuille:
+		Désactivation de produits financiers:
+			En tant que titulaire d'un portefeuille financier possédant des produits,
+			je veux pouvoir désactiver des produits financiers,
+			afin de ne plus les voir car je ne veux pas les gérer.
+			Critères d'acceptation:
+			- Je dois posséder au moins un produit financier
+			- La désactivation (ainsi que le fait qu'il disparaisse) doit se faire immédiatement sans déconnexion
+			- les produits désactivés doivent rester désactivés même après une deconnexion puis reconnexion 
+  
+		Réactivations de produits financiers:
+  			En tant que client possédant des produits financiers dans son portefeuille,
+			je veux pouvoir réactiver les produits qui sont désactivés,
+			afin de pouvoir les voir et les gérer.
+			Critères d'acceptation:
+			- Je dois avoir au moins un produit non-activé
+			- La réactivation de ces produits vont se faire immédiatement
+			- Les produits réactivés doivent le rester même si je me déconnecte
+ 
+		Souscription à de nouveaux produits financiers:
+			En tant que titulaire d'un portefeuille financier,
+			je veux pouvoir souscrire à de nouveaux produits financiers.
+			Critères d'acceptation:
+			- L'application doit m'informer que j'ai souscris à un nouveau produit quand j'ouvre mon portefeuille
+			- Les produits auquels je souscris doivent être immédiatement disponible
+			- Si un des produits pour lequel j'ai souscris est supprimer par l'institution financière, je dois être notifier quand j'ouvre mon portefeuille
+
+  	Fonctionnalité de virements:
+		Demande d'activation de la fonctionnalité:
+			En tant que titulaire d'un portefeuille,
+			je veux pouvoir faire une demande,
+			afin d'obtenir la fonctionnalité de virement.
+			Critères d'acceptation:
+			- Une fois la demande accepté, l'application doit retenir que ma demande a été accepter et ne dois pas m'enlever la fonctionnalité même lors de la déconnexion
+
+		Effectuer un virement:
+			En tant que titulaire d'un portefeuille,
+			je veux pouvoir effectuer un virement vers un autre compte,
+			afin de transférer de l'argent sans avoir besoin d'une carte bancaire.
+			Critères d'acceptation:
+			- Une demande pour obtenir la fonctionnalité a déjà été introduite et acceptée par la banque
+			- Le compte et le nom du destinataire doivent être spécifiés
+			- Le compte depuis lequel on veut virer cet argent doit être sélectionné
+			- Un montant à virer doit être précisé
+			- Le nom du destinataire doit correspondre au nom du titulaire du compte de destination 
+			- Le montant à virer doit être inférieur ou égal au montant sur le compte, mais aussi positif 
 
 
 - Gérer première connexion
