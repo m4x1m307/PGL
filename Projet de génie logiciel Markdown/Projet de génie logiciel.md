@@ -2,7 +2,7 @@
 ## Portefeuille
 - Demander ajout d'un portefeuille
   - En tant que client,
-  je pouvoir introduire une demande d'ouverture de portefeuille financier à une institution financière les détenant,
+  je veux pouvoir introduire une demande d'ouverture de portefeuille financier à une institution financière les détenant,
   afin de gérer les opérations concernant mes produits.
     #### Critères d'acceptation :
     - La demande de portefeuille est effectuée par un nouveau client     
