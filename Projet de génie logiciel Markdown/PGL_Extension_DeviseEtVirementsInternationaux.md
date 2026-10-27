@@ -1,3 +1,4 @@
+# Étudiant affecté à cette extension : Maxime Lawson 
 # Application cliente
 ## Portefeuille
 - Créer un nouveau compte
@@ -80,7 +81,7 @@
     je veux visualiser l'historique des taux de de conversion entre des devises,
     afin de voir comment est ce que le taux de conversion a varié.
         #### Critères d'acceptation :
-        //- Je dois sélectionner une devise de référence et d'autres devises
+        - Lorsque je visualise l'historique, le taux de conversion ne doit pas changer
 - Sélectionner période de visualisation
     - En tant qu'institution financière,
     je veux sélectionner la période de visualisation de l'historique,
