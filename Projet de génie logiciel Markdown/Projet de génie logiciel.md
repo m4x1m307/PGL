@@ -133,12 +133,24 @@
 	afin de transférer de l'argent sans avoir besoin d'une carte bancaire.
 	  #### Critères d'acceptation :
 	    - Une demande pour obtenir la fonctionnalité a déjà été introduite et acceptée par la banque
-	    - Le compte et le nom du destinataire doivent être spécifiés
-	    - Le compte depuis lequel on veut virer cet argent doit être sélectionné
-	    - Un montant à virer doit être précisé
-	    - Le nom du destinataire doit correspondre au nom du titulaire du compte de destination 
-	    - Le montant à virer doit être inférieur ou égal au montant sur le compte, mais aussi positif 
-
+- Sélectionner compte dans portefeuille
+  - En tant qu'utilisateur possèdant un portefeuille,
+  je veux pouvoir Sélectionner un compte dans mon portefeuille,
+  afin d'effectuer un virement avec celui ci.
+    #### Critères d'acceptation :
+    - L'application nous montre tous les compte qu'on peut choisir pour effectuer un virement
+- Préciser compte et nom du destinataire
+  - En tant qu'utilisateur voulant effectuer un virement,
+  je veux pouvoir spécifier compte et le nom du destinataire,
+  afin que la personne que je désire reçoive bien le virement
+    #### Critères d'acceptation :
+    - Le nom du destinataire doit correspondre au nom du titulaire du compte de destination
+- Choisir montant à transférer
+  - En tant qu'utilisateur voulant effectuer un virement,
+  je veux pouvoir choisir le montant pour le virement,
+  afin que celui ci ne dépasse pas le solde de mon compte.
+    #### Critères d'acceptation :
+    - Le montant à virer doit être inférieur ou égal au montant sur le compte, mais aussi positif
 # Application bancaire
 ## Session
 - Traiter une demande 

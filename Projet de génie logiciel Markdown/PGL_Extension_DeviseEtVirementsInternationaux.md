@@ -41,10 +41,19 @@
     afin d'envoyer de l'argent vers un compte dans une autre devise.
         #### Critères d'acceptation :
         - Le compte source et le compte destination utilisent des devises différentes
-        - Un taux de conversion va être appliqué pour ce virement
-        - Des frais de conversions vont être appliqués pour ce virement
+- Appliquer taux de conversion
+    - En tant qu'utilisateur effectuant un virement avec plusieurs devise,
+    je veux avoir le taux de conversion qui est appliqué,
+    afin de savoir combien est ce que je vais réellement payer lors de la transaction.
+        #### Critères d'acceptation
+        - Une fois le taux de conversion appliqué, je ne veux pas que la conversion change pendant que je suis en train de faire ma procédure de virement
+- Appliquer frais de conversion
+    - En tant qu'utilisateur effectuant un virement avec plusieurs devise,
+    je veux avoir les frais de conversion appliqués,
+    afin de savoir le montant de frais que je vais devoir payer.
+        #### Critères d'acceptation :
         - Les frais de conversions seront réduit si c'est un virement entre différents compartiments d’un compte multidevises.
-        - Je dois bien être informé de ces frais de conversions avant d'effectuer le virement 
+        - Je dois bien être informé de ces frais de conversions avant d'effectuer le virement
 - Préciser adresse du destinataire et numéro SWIFT de sa banque
     - En tant qu'utilisateur,
     je veux préciser l'adresse du destinaitaire ainsi que le numéro SWIFT de sa banque,
@@ -71,8 +80,20 @@
     je veux visualiser l'historique des taux de de conversion entre des devises,
     afin de voir comment est ce que le taux de conversion a varié.
         #### Critères d'acceptation :
-        - Je dois sélectionner une devise de référence et d'autres devises
-        - Je dois sélectionner la période durant laquelle je veux visualiser la variation du taux de conversion
+        //- Je dois sélectionner une devise de référence et d'autres devises
+- Sélectionner période de visualisation
+    - En tant qu'institution financière,
+    je veux sélectionner la période de visualisation de l'historique,
+    afin de visualiser l'historique durant la période que je désire.
+        #### Critères d'acceptation :
+        - L'application me propose certaines périodes prédéfinie (mensuel, annuel, etc...)
+        - Je ne peux pas sélectionner une période plus récente que la date du jour
+- Sélectionner devise de référence et autres devises
+    - En tant qu'institution financière,
+    je veux sélectionner une devise de référence et d'autres devise pour la visualisation,
+    afin de voir au mieux la variation du taux de conversion pour les devises que je désire.
+        #### Critères d'acceptation :
+        - L'application me propose de d'abord choisir la devise de référence, et je peux ensuite sélectionner plusieurs autre devise
 - Changer format d'exportation 
     - En tant qu'institution financière,
     je veux changer le format d'exportation en JSON ou CSV,
