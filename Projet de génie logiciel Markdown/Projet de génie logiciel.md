@@ -22,7 +22,7 @@
 	je veux pouvoir désactiver des produits financiers,
 	afin de ne plus les voir car je ne veux pas les gérer.
 	  #### Critères d'acceptation :
-    - Je possède un portefeuille avec au moins un produit financier dedans
+      - Je possède un portefeuille avec au moins un produit financier dedans
 	  - La désactivation (ainsi que le fait qu'il disparaisse) doit se faire immédiatement sans déconnexion
 	  - les produits désactivés doivent rester désactivés même après une deconnexion puis reconnexion 
   
