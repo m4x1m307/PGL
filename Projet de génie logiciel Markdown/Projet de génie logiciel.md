@@ -249,3 +249,19 @@
   afin de permettre à un client de ne plus vouloir gérer ce produit.
     #### Critères d'acceptation :
     - Le client doit avoir ce produit déjà ouvert dans son portefeuille au moment de la demande
+## Lister des données
+## Exportation et importation
+- Exporter données
+  - En tant qu'institution financière,
+  je veux pouvoir exporter des données que je suis en train de lister,
+  afin de les imprimer ou de les partager.
+    #### Critères d'acceptation :
+    - L'application doit proposer au moins les formats CSV et JSON pour l'exportation
+    - Les données listées ne peuvent pas être vides
+- Importer fichiers de données
+  - En tant qu'institution financière,
+  je veux pouvoir importer des fichiers de données,
+  afin de peupler la base données depuis l'application.
+    #### Critères d'acceptation :
+    - Les fichiers ne contiennent que des informations appartenant à l’institution financière qui est actuellement connectée à l’application.
+    - L'application propose une option pour directement importer un ou plusieurs fichiers
