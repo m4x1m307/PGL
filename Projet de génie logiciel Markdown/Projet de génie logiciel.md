@@ -49,21 +49,23 @@
   afin de gérer mes produits.
     #### Critères d'acceptation : 
     - Le client doit être connecté à l'application 
-    - Le client détient au moins un produit financier dans une institution financièr
+    - Le client détient au moins un produit financier dans une institution financière
 - Visualiser historique
-  - En tant que client connecté titulaire de produits financiers,
+  - En tant que client,
   je veux pouvoir visualiser l'historique de mes produits,
   afin de faire des opérations sur celles-ci.
     #### Critères d'acceptation : 
     - Le client doit avoir au moins un portefeuille 
     - Le client doit être connecté
+    - Le client détient au moins un produit financier dans une institution financière
 - Filtrer historique
-  - En tant que client connecté titulaire de produits financiers,
+  - En tant que client,
   je veux pouvoir filtrer l'historique selon une certaine période, certains produits financiers ou encore un ensemble de portefeuilles,
   afin de comparer les données dans le temps ou trouver certaines transactions.
     #### Critères d'acceptation : 
       - Le client détient au moins un portefeuille
       - Le client doit être connecté
+      - Le client détient au moins un produit financier dans une institution financière
 - Exporter données
     -  En tant que client,
     je veux pouvoir exporter l'historique au format CSV,
@@ -72,12 +74,14 @@
        - Toute donnée filtrée est comprise dans l'historique uniquement
        - Le client détient au moins un portefeuille
        - Le client doit être connecté
+       - Le client détient au moins un produit financier dans une institution financière
 - Changer de type de visualisation
     - En tant que client,
     je veux pouvoir changer le format de la visualisation de mes produits (graphes, listes, tableaux,...).
       #### Critères d'acceptation : 
       - Le client détient au moins un portefeuille
       - Le client doit être connecté
+      - Le client détient au moins un produit financier dans une institution financière
 - Visualiser portefeuille
   - En tant que client,
   je veux pouvoir visualiser les produits financiers de mon portefeuille,
@@ -85,6 +89,7 @@
     #### Critères d'acceptation : 
     - Le client détient au moins un portefeuille
     - Le client doit être connecté
+    - Le client détient au moins un produit financier dans une institution financière
 - Sélectionner produits à visualiser
   - En tant que client,
   je veux pouvoir sélectionner mes produits à visualiser,
@@ -92,12 +97,14 @@
     #### Critères d'acceptation :
     - Les produits sélectionnés sont des produits appartenant au client
     - Le client doit être connecté
+    - Le client détient au moins un produit financier dans une institution financière
 - Changer de portefeuille 
-  - En tan que client connecté titulaire de produits financiers dans diverses institutions,
+  - En tan que client,
   je veux pouvoir changer de portefeuille,
   afin de voir mes différents produits dans diverses institutions.
     #### Critères d'acceptation : 
-    - Le client détient au moins 2 portefeuilles 
+    - Le client détient au moins 1 portefeuille dans 2 institutions financières  
+    - Le client détient au moins un produit financier dans une institution financière
     - Le client doit être connecté
 ## Session
 - Se connecter
@@ -107,11 +114,12 @@
     #### Critères d'acceptation : 
      - Le client ne peut pas se connecter à 2 appareils différents simultanément
 - Créer un compte
-  - En tant qu'utilisateur n'ayant aucun compte,
+  - En tant qu'utilisateur,
   je veux pouvoir créer un compte,
   afin d'accéder à toutes les fonctionnalités que l'institution financière propose.
     #### Critères d'acceptation :
-    - Lorsque j'ai créer un compte, l'application doit le retenir et je ne dois plus en recréer un lors de ma reconnexion
+    - Lorsque j'ai créé un compte, l'application doit le retenir et je ne dois plus en recréer un lors de ma reconnexion
+    - Je n'ai pas encore de compte créé dans l'application
 - Choisir langue préférée
   - En tant qu'utilisateur venant de créer un compte,
   je veux choisir ma langue préférée et la mémoriser,
@@ -131,7 +139,7 @@
     je veux pouvoir réinitialiser mon mot de passe,
     afin de me protéger d'un futur oubli ou d'une fuite de données.
         #### Critères d'acceptation : 
-      - Le client doit être connecté
+      - Le client doit être connecté 
       - Le client doit connaître son mot de passe pour le changer
 - Changer langue
   - En tant qu'utilisateur non-connécté,
@@ -149,12 +157,13 @@
     - Le changement est immédiat, pas besoin de se déconnecter
     - Mon nouveau choix est enregistrer et ne doit pas changer tant que je ne le change pas manuellement
 - Fermer session
-  - En tant qu'utilisateur connécté,
+  - En tant qu'utilisateur,
   je veux pouvoir fermer la session en me déconnectant,
-  afin de pouvoir me connecter sur un autre appareil ou de quitter l'application.
+  afin de pouvoir me connecter sur un autre appareil ou quitter l'application.
     #### Critères d'acceptation :
-    - Je me reconnecter à tout moment à condition que personne ne soit connecter en même temps
+    - Je peux me reconnecter à tout moment à condition que personne ne soit connecté en même temps
     - L'application possède un bouton pour pouvoir se déconnecter
+    - L'utilisateur est connecté avant de fermer la session 
 ## Virements
 - Demande ajout de la fonctionnalité
 	- En tant que titulaire d'un portefeuille,  
