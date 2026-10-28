@@ -106,6 +106,20 @@
   afin d'avoir accès à mes données.
     #### Critères d'acceptation : 
      - Le client ne peut pas se connecter à 2 appareils différents simultanément
+- Créer un compte
+  - En tant qu'utilisateur n'ayant aucun compte,
+  je veux pouvoir créer un compte,
+  afin d'accéder à toutes les fonctionnalités que l'institution financière propose.
+    #### Critères d'acceptation :
+    - Lorsque j'ai créer un compte, l'application doit le retenir et je ne dois plus en recréer un lors de ma reconnexion
+- Choisir langue préférée
+  - En tant qu'utilisateur venant de créer un compte,
+  je veux choisir ma langue préférée et la mémoriser,
+  afin d'avoir la meilleure expérience possible.
+    #### Critères d'acceptation :
+    - Je ne dois pas resélectionner ma langue préférée quand je me reconnecte
+    - L'application me propose un champ pour indiquer ma langue
+    - Une langue par défaut est déjà écrite dans le champ
 - Exécution session
   - En tant que client,
   je veux pouvoir exécuter la session,
@@ -119,6 +133,28 @@
         #### Critères d'acceptation : 
       - Le client doit être connecté
       - Le client doit connaître son mot de passe pour le changer
+- Changer langue
+  - En tant qu'utilisateur non-connécté,
+  je veux pouvoir choisir la langue de la page d'acceuil,
+  afin de suivre les instructions dans la langue de mon choix.
+    #### Critères d'acceptation :
+    - L'application me propose un sélecteur de langue
+    - L'application doit avoir toutes ses informations dans la langue que j'ai choisie
+- Changer langue préférée
+  - En tant qu'utilisateur déjà connecté,
+  je veux pouvoir changer ma langue préférée plus tard,
+  afin d'utiliser l'application avec la langue que je désire pour la connexion actuelle et les prochaines connexions.
+    #### Critères d'acceptation :
+    - Une option est disponible pour changer ma langue préférée
+    - Le changement est immédiat, pas besoin de se déconnecter
+    - Mon nouveau choix est enregistrer et ne doit pas changer tant que je ne le change pas manuellement
+- Fermer session
+  - En tant qu'utilisateur connécté,
+  je veux pouvoir fermer la session en me déconnectant,
+  afin de pouvoir me connecter sur un autre appareil ou de quitter l'application.
+    #### Critères d'acceptation :
+    - Je me reconnecter à tout moment à condition que personne ne soit connecter en même temps
+    - L'application possède un bouton pour pouvoir se déconnecter
 ## Virements
 - Demande ajout de la fonctionnalité
 	- En tant que titulaire d'un portefeuille,  

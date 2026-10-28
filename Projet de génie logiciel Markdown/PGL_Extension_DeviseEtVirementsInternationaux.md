@@ -1,16 +1,16 @@
 # Étudiant affecté à cette extension : Maxime Lawson 
 # Application cliente
 ## Portefeuille
-- Créer un nouveau compte
+- Créer un nouveau compte bancaire
     - En tant que client,
-    je veux créer un compte,
+    je veux pouvoir créer un compte banquaire,
     afin d'y stocker de l'argent ou de faire des virements.
         #### Critères d'acceptation :
         - J'ai déjà fait une demande pour créer le compte à la banque au préalable, et elle a été acceptée
         - J'ai au moins un portefeuille
 - Sélectionner devises du compte
     - En tant que client possesseur d'un compte dans une institution financière,
-    je veux changer la devise principale de mon compte ou rajouter des devises dans celui ci,
+    je veux pouvoir changer la devise principale de mon compte ou rajouter des devises dans celui ci,
     afin d'avoir un compte multidevises ou d'avoir un compte avec une devise différente de l'euro pour pouvoir faire des virements internationaux.
         #### Critères d'acceptation :
         - je dois avoir le choix parmi au moins 5 devises dont l'euro (EUR), le dollar américain (USD) et le livre sterling(GBP)
@@ -30,7 +30,7 @@
         - Les devises pour le calcul doivent être spécifiées 
 - Suivre historique des taux des devises
     - En tant qu'utilisateur,
-    je veux suivre l'historique des taux des devises,
+    je veux pouvoir suivre l'historique des taux des devises,
     afin de savoir quand est ce que les devises de mon choix sont les plus intérressantes
         #### Critères d'acceptation :
         - L'application doit me permettre de choisir les devises que je veux visualiser via un sélecteur
@@ -38,7 +38,7 @@
 ## Virements
 - Effectuer virement impliquant des devises
     - En tant qu'utilisateur,
-    je veux effectuer des virements impliquant des devises différentes,
+    je veux pouvoir effectuer des virements impliquant des devises différentes,
     afin d'envoyer de l'argent vers un compte dans une autre devise.
         #### Critères d'acceptation :
         - Le compte source et le compte destination utilisent des devises différentes
@@ -57,13 +57,13 @@
         - Je dois bien être informé de ces frais de conversions avant d'effectuer le virement
 - Préciser adresse du destinataire et numéro SWIFT de sa banque
     - En tant qu'utilisateur,
-    je veux préciser l'adresse du destinaitaire ainsi que le numéro SWIFT de sa banque,
+    je veux pouvoir préciser l'adresse du destinaitaire ainsi que le numéro SWIFT de sa banque,
     afin d'effectuer un virement vers ce destinaire dont le compte se trouve hors de la zone SEPA.
         #### Critères d'acceptation :
         - La banque du destinataire doit être situé hors zone SEPA
 - Préciser répartition des frais de commissions
     - En tant qu'utilisateur faisant un virement impliquant des devises différentes,
-    je veux choisir comment est ce que les frais de commissions seront répartis entre le destinataire et moi,
+    je veux pouvoir choisir comment est ce que les frais de commissions seront répartis entre le destinataire et moi,
     afin d'être en accord avec le destinataire et que le virement se déroule au mieux.
         ####  Critères d'acceptation :
         - L'application propose de sélectionner entre trois options possibles : Payer tous les frais, les destinataire payes tous les frais, ou les frais sont partagés entre les deux parties
@@ -72,32 +72,32 @@
 ## Visualitation
 - Visualiser historique des frais de commissions
     - En tant qu'institution financière,
-    je veux visualiser l'historique des frais de commissions,
+    je veux pouvoir visualiser l'historique des frais de commissions,
     afin de voir comment les frais de commissions ont variés.
         #### Critères d'acceptation :
         - Seul les frais de commissions par défaut seront affichés si aucune modifications n'as été faite
 - Visualiser historique des taux de conversions
     - En tant qu'institution financière,
-    je veux visualiser l'historique des taux de de conversion entre des devises,
+    je veux pouvoir visualiser l'historique des taux de de conversion entre des devises,
     afin de voir comment est ce que le taux de conversion a varié.
         #### Critères d'acceptation :
         - Lorsque je visualise l'historique, le taux de conversion ne doit pas changer
 - Sélectionner période de visualisation
     - En tant qu'institution financière,
-    je veux sélectionner la période de visualisation de l'historique,
+    je veux pouvoir sélectionner la période de visualisation de l'historique,
     afin de visualiser l'historique durant la période que je désire.
         #### Critères d'acceptation :
         - L'application me propose certaines périodes prédéfinie (mensuel, annuel, etc...)
         - Je ne peux pas sélectionner une période plus récente que la date du jour
 - Sélectionner devise de référence et autres devises
     - En tant qu'institution financière,
-    je veux sélectionner une devise de référence et d'autres devise pour la visualisation,
+    je veux pouvoir sélectionner une devise de référence et d'autres devise pour la visualisation,
     afin de voir au mieux la variation du taux de conversion pour les devises que je désire.
         #### Critères d'acceptation :
         - L'application me propose de d'abord choisir la devise de référence, et je peux ensuite sélectionner plusieurs autre devise
 - Changer format d'exportation 
     - En tant qu'institution financière,
-    je veux changer le format d'exportation en JSON ou CSV,
+    je veux pouvoir changer le format d'exportation en JSON ou CSV,
     afin qu'il convienne le mieux à mes besoins.
         #### Critères d'acceptation :
         - L'application propose un petit menu de sélection pour choisir son format
@@ -109,7 +109,7 @@
         - C'est possible uniquement si c'est une transaction qui demande une conversion entre devises
 - Modifier pourcentage de frais de commission
     - En tant qu'institution financière,
-    je veux modifier le pourcentage de frais de commission,
+    je veux pouvoir modifier le pourcentage de frais de commission,
     afin qu'il s'adapte au mieux à la satistfaction client et la concurence
 - Préciser pourcentage de frais de commission
     - En tant qu'institution financière,
