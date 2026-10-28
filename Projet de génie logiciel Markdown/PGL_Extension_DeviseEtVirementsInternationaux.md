@@ -83,18 +83,13 @@
 
 # Application bancaire
 ## Visualitation
-- Visualiser historique
-  - En tant qu'institution financière,
-  je veux pouvoir visualiser l'historique de certaines données,
-  afin de faire des opérations sur celles-ci.
-    #### Critères d'acceptation : 
-    - L'application propose quelle données visualiser
 - Exporter données
     -  En tant qu'institution financière,
-    je veux pouvoir exporter l'historique au format CSV ou JSON,
+    je veux pouvoir exporter des données au format CSV ou JSON,
     afin de pouvoir l'imprimer ou le partager.
         #### Critères d'acceptation : 
-       - Toute donnée filtrée est comprise dans l'historique uniquement
+       - Des données sont déjà en train d'être visualisées
+       - Une option est disponible dans l'application
 - Visualiser historique des frais de commissions
     - En tant qu'institution financière,
     je veux pouvoir visualiser l'historique des frais de commissions,
