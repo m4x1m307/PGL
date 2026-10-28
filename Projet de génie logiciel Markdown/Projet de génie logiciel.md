@@ -14,24 +14,24 @@
   je veux pouvoir modifier mon portefeuille,
   afin qu'il corresponde le mieux à mes besoins.
     #### Critères d'acceptations :
-    - J'ai déjà fait une demande d'ajout de portefeuille et elle a été accepté par la banque
-    - J'ai accès à mon portefeuille
+    - Le client a déjà fait une demande d'ajout de portefeuille et elle a été accepté par la banque
+    - Le client a accès à son portefeuille
 
 - Désactiver produits
 	- En tant que client d'une institution financière,
 	je veux pouvoir désactiver des produits financiers,
 	afin de ne plus les voir car je ne veux pas les gérer.
 	  #### Critères d'acceptation :
-      - Je possède un portefeuille avec au moins un produit financier dedans
+      - Le client possède un portefeuille avec au moins un produit financier dedans
 	  - La désactivation (ainsi que le fait qu'il disparaisse) doit se faire immédiatement sans déconnexion
-	  - les produits désactivés doivent rester désactivés même après une deconnexion puis reconnexion 
+	  - Les produits désactivés doivent rester désactivés même après une deconnexion puis reconnexion 
   
 - Réactiver produits
   - En tant que client d'une institution financière,
 	je veux pouvoir réactiver les produits qui sont désactivés,
 	afin de pouvoir les voir et le gérer.
 	  #### Critères d'acceptation :
-    - Je dois avoir un portefeuille avec au moins un produit non-activé que j'avais sourscris auparavant 
+    - Le client doit avoir un portefeuille avec au moins un produit non-activé que j'avais sourscris auparavant 
     - La réactivation de ces produits vont se faire immédiatement
     - Les produits réactivés doivent le rester même si je me déconnecte
  
@@ -39,9 +39,9 @@
 	- En tant que titulaire d'un portefeuille financier,
 	je veux pouvoir souscrire à de nouveaux produits financiers.
 	  #### Critères d'acceptation:
-      - L'application doit m'informer que j'ai souscris à un nouveau produit quand j'ouvre mon portefeuille
-      - Les produits auquels je souscris doivent être immédiatement disponible
-      - Si un des produits pour lequel j'ai souscris est supprimer par l'institution financière, je dois être notifier quand j'ouvre mon portefeuille
+      - L'application doit informer le client qu'il a souscris à un nouveau produit quand il ouvre mon portefeuille
+      - Les produits auquels il souscrit doivent être immédiatement disponible
+      - Si un des produits pour lequel il a souscris est supprimer par l'institution financière, il doit être notifier quand il ouvre mon portefeuille
 
 - Accéder au portefeuille
   - En tant que client connecté titulaire de produits financiers,
@@ -118,15 +118,15 @@
   je veux pouvoir créer un compte,
   afin d'accéder à toutes les fonctionnalités que l'institution financière propose.
     #### Critères d'acceptation :
-    - Lorsque j'ai créé un compte, l'application doit le retenir et je ne dois plus en recréer un lors de ma reconnexion
-    - Je n'ai pas encore de compte créé dans l'application
+    - Lorsque le client créé un compte, l'application doit le retenir et il ne doit plus en recréer un lors de sa reconnexion
+    - Le client n'a pas encore de compte créé dans l'application
 - Choisir langue préférée
   - En tant qu'utilisateur venant de créer un compte,
   je veux choisir ma langue préférée et la mémoriser,
   afin d'avoir la meilleure expérience possible.
     #### Critères d'acceptation :
-    - Je ne dois pas resélectionner ma langue préférée quand je me reconnecte
-    - L'application me propose un champ pour indiquer ma langue
+    - Le client ne doit pas resélectionner sa langue préférée quand il se reconnecte
+    - L'application lui propose un champ pour indiquer sa langue
     - Une langue par défaut est déjà écrite dans le champ
 - Exécution session
   - En tant que client,
@@ -146,22 +146,22 @@
   je veux pouvoir choisir la langue de la page d'acceuil,
   afin de suivre les instructions dans la langue de mon choix.
     #### Critères d'acceptation :
-    - L'application me propose un sélecteur de langue
-    - L'application doit avoir toutes ses informations dans la langue que j'ai choisie
+    - L'application lui propose un sélecteur de langue
+    - L'application doit avoir toutes ses informations dans la langue qu'il a choisie
 - Changer langue préférée
   - En tant qu'utilisateur déjà connecté,
   je veux pouvoir changer ma langue préférée plus tard,
   afin d'utiliser l'application avec la langue que je désire pour la connexion actuelle et les prochaines connexions.
     #### Critères d'acceptation :
-    - Une option est disponible pour changer ma langue préférée
+    - Une option est disponible pour changer sa langue préférée
     - Le changement est immédiat, pas besoin de se déconnecter
-    - Mon nouveau choix est enregistrer et ne doit pas changer tant que je ne le change pas manuellement
+    - Son nouveau choix est enregistrer et ne doit pas changer tant qu'il ne le change pas manuellement
 - Fermer session
   - En tant qu'utilisateur,
   je veux pouvoir fermer la session en me déconnectant,
   afin de pouvoir me connecter sur un autre appareil ou quitter l'application.
     #### Critères d'acceptation :
-    - Je peux me reconnecter à tout moment à condition que personne ne soit connecté en même temps
+    - Le client peut se reconnecter à tout moment à condition que personne ne soit connecté en même temps
     - L'application possède un bouton pour pouvoir se déconnecter
     - L'utilisateur est connecté avant de fermer la session 
 ## Virements
@@ -170,7 +170,7 @@
 	je veux pouvoir faire une demande,  
 	afin d'obtenir la fonctionnalité de virement.  
       #### Critères d'acceptation :
-        - Une fois la demande accepté, l'application doit retenir que ma demande a été accepter et ne dois pas m'enlever la fonctionnalité même lors de la déconnexion
+        - Une fois la demande accepté, l'application doit retenir que la demande du client a été accepter et ne dois pas lui enlever la fonctionnalité même lors de la déconnexion
 
 - Effectuer un virement
 	- En tant que titulaire d'un portefeuille,  

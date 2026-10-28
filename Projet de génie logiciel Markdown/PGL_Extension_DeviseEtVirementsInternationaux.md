@@ -6,28 +6,28 @@
     je veux pouvoir sélectionner un compte bancaire,
     afin d'y consulter mon solde.
         #### Critères d'acceptation :
-        - J'ai déjà créé au moins un compte bancaire
+        - Le client a déjà créé au moins un compte bancaire
 - Modifier devises du compte
     - En tant que client,
     je veux pouvoir modifier les devises de mon compte bancaire,
     afin de ne plus avoir la devise par défaut ou d'avoir un compte multidevises.
         #### Critères d'acceptation :
-        - J'ai déjà créé un compte bancaire
-        - L'application me permet de sélectionner parmi les devises disponibles
+        - Le client a déjà créé un compte bancaire
+        - L'application permet de sélectionner parmi les devises disponibles
 - Créer un nouveau compte bancaire
     - En tant que client,
     je veux pouvoir créer un compte bancaire,
     afin d'y stocker de l'argent ou de faire des virements.
         #### Critères d'acceptation :
-        - J'ai déjà fait une demande pour créer le compte à la banque au préalable, et elle a été acceptée
-        - J'ai au moins un portefeuille
+        - Le client a déjà fait une demande pour créer le compte à la banque au préalable, et elle a été acceptée
+        - Le client a au moins un portefeuille
 - Sélectionner devises du compte
     - En tant que client possesseur d'un compte dans une institution financière,
     je veux pouvoir changer la devise principale de mon compte ou rajouter des devises dans celui ci,
     afin d'avoir un compte multidevises ou d'avoir un compte avec une devise différente de l'euro pour pouvoir faire des virements internationaux.
         #### Critères d'acceptation :
-        - je dois avoir le choix parmi au moins 5 devises dont l'euro (EUR), le dollar américain (USD) et le livre sterling(GBP)
-        - Le choix de la ou des devise(s) de mon compte doit/doivent être retenue(s) et je ne dois pas le respécifier quand je me reconnecte
+        - Le client doit avoir le choix parmi au moins 5 devises dont l'euro (EUR), le dollar américain (USD) et le livre sterling(GBP)
+        - Le choix de la ou des devise(s) du compte du client doit/doivent être retenue(s) et il ne dois pas le respécifier quand il se reconnecte
 ## Taux des devises
 - Calculer taux de conversion entre devises 
     - En tant qu'utilisateur,
@@ -46,8 +46,8 @@
     je veux pouvoir suivre l'historique des taux des devises,
     afin de savoir quand est ce que les devises de mon choix sont les plus intérressantes
         #### Critères d'acceptation :
-        - L'application doit me permettre de choisir les devises que je veux visualiser via un sélecteur
-        - La visualitation doit changer en même temps que je change la devise dans le champ
+        - L'application doit permettre au client de choisir les devises qu'il veux visualiser via un sélecteur
+        - La visualitation doit changer en même temps que il change la devise dans le champ
 ## Virements
 - Effectuer virement impliquant des devises
     - En tant qu'utilisateur,
@@ -60,14 +60,14 @@
     je veux avoir le taux de conversion qui est appliqué,
     afin de savoir combien est ce que je vais réellement payer lors de la transaction.
         #### Critères d'acceptation
-        - Une fois le taux de conversion appliqué, je ne veux pas que la conversion change pendant que je suis en train de faire ma procédure de virement
+        - Une fois le taux de conversion appliqué, le client ne veux pas que la conversion change pendant qu'il suis en train de faire une procédure de virement
 - Appliquer frais de conversion
     - En tant qu'utilisateur effectuant un virement avec plusieurs devise,
     je veux avoir les frais de conversion appliqués,
     afin de savoir le montant de frais que je vais devoir payer.
         #### Critères d'acceptation :
         - Les frais de conversions seront réduit si c'est un virement entre différents compartiments d’un compte multidevises.
-        - Je dois bien être informé de ces frais de conversions avant d'effectuer le virement
+        - Le client doit bien être informé de ces frais de conversions avant d'effectuer le virement
 - Préciser adresse du destinataire et numéro SWIFT de sa banque
     - En tant qu'utilisateur,
     je veux pouvoir préciser l'adresse du destinaitaire ainsi que le numéro SWIFT de sa banque,
@@ -83,6 +83,18 @@
 
 # Application bancaire
 ## Visualitation
+- Visualiser historique
+  - En tant qu'institution financière,
+  je veux pouvoir visualiser l'historique de certaines données,
+  afin de faire des opérations sur celles-ci.
+    #### Critères d'acceptation : 
+    - L'application propose quelle données visualiser
+- Exporter données
+    -  En tant qu'institution financière,
+    je veux pouvoir exporter l'historique au format CSV ou JSON,
+    afin de pouvoir l'imprimer ou le partager.
+        #### Critères d'acceptation : 
+       - Toute donnée filtrée est comprise dans l'historique uniquement
 - Visualiser historique des frais de commissions
     - En tant qu'institution financière,
     je veux pouvoir visualiser l'historique des frais de commissions,
@@ -94,20 +106,20 @@
     je veux pouvoir visualiser l'historique des taux de de conversion entre des devises,
     afin de voir comment est ce que le taux de conversion a varié.
         #### Critères d'acceptation :
-        - Lorsque je visualise l'historique, le taux de conversion ne doit pas changer
+        - Lorsque l'institution visualise l'historique, le taux de conversion ne doit pas changer
 - Sélectionner période de visualisation
     - En tant qu'institution financière,
     je veux pouvoir sélectionner la période de visualisation de l'historique,
     afin de visualiser l'historique durant la période que je désire.
         #### Critères d'acceptation :
-        - L'application me propose certaines périodes prédéfinie (mensuel, annuel, etc...)
-        - Je ne peux pas sélectionner une période plus récente que la date du jour
+        - L'application propose certaines périodes prédéfinie (mensuel, annuel, etc...)
+        - L'institution ne peux pas sélectionner une période plus récente que la date du jour
 - Sélectionner devise de référence et autres devises
     - En tant qu'institution financière,
     je veux pouvoir sélectionner une devise de référence et d'autres devise pour la visualisation,
     afin de voir au mieux la variation du taux de conversion pour les devises que je désire.
         #### Critères d'acceptation :
-        - L'application me propose de d'abord choisir la devise de référence, et je peux ensuite sélectionner plusieurs autre devise
+        - L'application propose de d'abord choisir la devise de référence, et on peut ensuite sélectionner plusieurs autre devise
 - Changer format d'exportation 
     - En tant qu'institution financière,
     je veux pouvoir changer le format d'exportation en JSON ou CSV,
