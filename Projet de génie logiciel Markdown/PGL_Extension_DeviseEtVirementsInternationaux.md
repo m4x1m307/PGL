@@ -1,9 +1,22 @@
 # Étudiant affecté à cette extension : Maxime Lawson 
 # Application cliente
 ## Portefeuille
+- Sélectionner compte bancaire
+    - En tant que client,
+    je veux pouvoir sélectionner un compte bancaire,
+    afin d'y consulter mon solde.
+        #### Critères d'acceptation :
+        - J'ai déjà créé au moins un compte bancaire
+- Modifier devises du compte
+    - En tant que client,
+    je veux pouvoir modifier les devises de mon compte bancaire,
+    afin de ne plus avoir la devise par défaut ou d'avoir un compte multidevises.
+        #### Critères d'acceptation :
+        - J'ai déjà créé un compte bancaire
+        - L'application me permet de sélectionner parmi les devises disponibles
 - Créer un nouveau compte bancaire
     - En tant que client,
-    je veux pouvoir créer un compte banquaire,
+    je veux pouvoir créer un compte bancaire,
     afin d'y stocker de l'argent ou de faire des virements.
         #### Critères d'acceptation :
         - J'ai déjà fait une demande pour créer le compte à la banque au préalable, et elle a été acceptée
@@ -68,7 +81,7 @@
         ####  Critères d'acceptation :
         - L'application propose de sélectionner entre trois options possibles : Payer tous les frais, les destinataire payes tous les frais, ou les frais sont partagés entre les deux parties
 
-# Application banquaire
+# Application bancaire
 ## Visualitation
 - Visualiser historique des frais de commissions
     - En tant qu'institution financière,
