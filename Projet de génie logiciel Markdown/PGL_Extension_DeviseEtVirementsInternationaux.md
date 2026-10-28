@@ -111,6 +111,9 @@
     - En tant qu'institution financière,
     je veux pouvoir modifier le pourcentage de frais de commission,
     afin qu'il s'adapte au mieux à la satistfaction client et la concurence
+        #### Critères d'acceptation :
+        - Le nouveau pourcentage s'applique uniquement aux transactions demandant une conversion entre devises
+        - Par défaut, la modification s'applique à toutes les paires de devises
 - Préciser pourcentage de frais de commission
     - En tant qu'institution financière,
     je veux préciser le pourcentage de frais de commission,

@@ -18,20 +18,20 @@
     - J'ai accès à mon portefeuille
 
 - Désactiver produits
-	- En tant que titulaire d'un portefeuille financier possédant des produits,
+	- En tant que client d'une institution financière,
 	je veux pouvoir désactiver des produits financiers,
 	afin de ne plus les voir car je ne veux pas les gérer.
 	  #### Critères d'acceptation :
-	  - Je dois posséder au moins un produit financier
+    - Je possède un portefeuille avec au moins un produit financier dedans
 	  - La désactivation (ainsi que le fait qu'il disparaisse) doit se faire immédiatement sans déconnexion
 	  - les produits désactivés doivent rester désactivés même après une deconnexion puis reconnexion 
   
 - Réactiver produits
-  - En tant que client possédant des produits financiers dans son portefeuille,
+  - En tant que client d'une institution financière,
 	je veux pouvoir réactiver les produits qui sont désactivés,
 	afin de pouvoir les voir et le gérer.
 	  #### Critères d'acceptation :
-    - Je dois avoir au moins un produit non-activé
+    - Je dois avoir un portefeuille avec au moins un produit non-activé que j'avais sourscris auparavant 
     - La réactivation de ces produits vont se faire immédiatement
     - Les produits réactivés doivent le rester même si je me déconnecte
  
