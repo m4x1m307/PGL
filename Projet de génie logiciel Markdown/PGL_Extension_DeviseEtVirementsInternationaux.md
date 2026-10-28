@@ -120,12 +120,6 @@
     afin de voir au mieux la variation du taux de conversion pour les devises que je désire.
         #### Critères d'acceptation :
         - L'application propose de d'abord choisir la devise de référence, et on peut ensuite sélectionner plusieurs autre devise
-- Changer format d'exportation 
-    - En tant qu'institution financière,
-    je veux pouvoir changer le format d'exportation en JSON ou CSV,
-    afin qu'il convienne le mieux à mes besoins.
-        #### Critères d'acceptation :
-        - L'application propose un petit menu de sélection pour choisir son format
 ## Pourcentage de frais de commission
 - Gérer pourcentage de frais de commission
     - En tant qu'institution financière,
