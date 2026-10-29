@@ -186,7 +186,7 @@ avoir lune nouvelle carte
     - L'employé a l'autorisation de l'instution financière de bloquer la carte
     - L'ancienne carte sera bloquée et inutilisable par la suite  
 - Expirer carte client
-  -   En tant qu'employé, je veux pouvoir expirer la carte d'un client 
+  -   En tant qu'employé, je veux pouvoir expirer la carte d'un client afin que le client puisse recevoir une carte plus moderne
       ### Critères d'acceptation
       - L'employé travaille dans une institution financière 
       - L'employé a l'autorisation de l'institution financière pour faire expirer la carte
