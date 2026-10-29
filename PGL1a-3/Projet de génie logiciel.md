@@ -55,7 +55,8 @@
   je veux pouvoir visualiser l'historique de mes produits,
   afin de faire des opérations sur celles-ci.
     #### Critères d'acceptation : 
-    - Le client doit avoir au moins un portefeuille 
+    - Le client doit avoir au moins un portefeuille
+    - Le client doit être dans un portefeuille pour effectuer cette fonctionnalité 
     - Le client doit être connecté
     - Le client détient au moins un produit financier dans une institution financière
 - Filtrer historique
@@ -104,8 +105,8 @@
   afin de voir mes différents produits dans diverses institutions.
     #### Critères d'acceptation : 
     - Le client détient au moins 1 portefeuille dans 2 institutions financières  
-    - Le client détient au moins un produit financier dans une institution financière
     - Le client doit être connecté
+    - Le client doit déjà être dans un portefeuille durant cette action 
 ## Session
 - Se connecter
   - En tant que client,
@@ -178,6 +179,7 @@
 	afin de transférer de l'argent sans avoir besoin d'une carte bancaire.
 	  #### Critères d'acceptation :
 	    - Une demande pour obtenir la fonctionnalité a déjà été introduite et acceptée par la banque
+      - Le client doit être dans un de ses portefeuille
 - Sélectionner compte dans portefeuille
   - En tant qu'utilisateur possèdant un portefeuille,
   je veux pouvoir Sélectionner un compte dans mon portefeuille,
