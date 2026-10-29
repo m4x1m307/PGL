@@ -68,7 +68,7 @@
       - Le client détient au moins un produit financier dans une institution financière
 - Exporter données
     -  En tant que client,
-    je veux pouvoir exporter l'historique au format CSV,
+    je veux pouvoir exporter l'historique au format CSV et JSON,
     afin de pouvoir l'imprimer ou le partager.
         #### Critères d'acceptation : 
        - Toute donnée filtrée est comprise dans l'historique uniquement
