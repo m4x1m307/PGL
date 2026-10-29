@@ -5,102 +5,98 @@
 ## Compte-titres et profil d'investisseur
 
 - Souscrire à un compte titre
-  - En tant que client d'une institution financière, je veux pouvoir demander l'ouverture d'un compte-titres, afin d'acheter et de gérer des placements financiers.
+  - En tant que client, je veux pouvoir demander l'ouverture d'un compte-titres afin d'acheter et de gérer des placements.
   ### Critères d'acceptation :
-    - Le client possède un portefeuille lié à l'institution auprès de laquelle il veut ouvrir le compte-titres.
-    - Un compte-titres doit être lié à un compte courant dont le client est titulaire dans la même institution financière.
-    - La souscription nécessite de remplir un formulaire de profil d'investisseur, transmis pour validation à l'institution.
+  - Le client doit posséder un portefeuille dans l'institution financière concernée.
+  - Le client doit avoir un compte courant dans cette même institution.
+  - Le client doit remplir le formulaire de profil d'investisseur.
 
 - Remplir formulaire profil investisseur
-  - En tant que client souhaitant investir, je veux pouvoir remplir un questionnaire sur ma situation et mes préférences, afin que l'institution financière puisse déterminer mon profil d'investisseur.
+  - En tant que client, je veux pouvoir remplir un formulaire afin que la banque détermine mon profil d'investisseur.
   ### Critères d'acceptation :
-    - Le formulaire est accessible lors de la souscription à un compte-titres et lors d'une modification ultérieure du profil.
+  - Le client doit demander l'ouverture d'un compte-titres ou vouloir modifier son profil actuel.
 
 - Modifier profil investisseur
-  - En tant que titulaire d'un compte-titres, je veux pouvoir soumettre un nouveau questionnaire de profil d'investisseur, afin d'adapter mon profil à l'évolution de ma situation et de mes objectifs.
+  - En tant que client, je veux pouvoir modifier mon profil d'investisseur afin qu'il corresponde à ma situation actuelle.
   ### Critères d'acceptation :
-    - Le client possède déjà un compte-titres et un profil d'investisseur.
+  - Le client doit déjà posséder un compte-titres et un profil d'investisseur.
+  - Le client doit remplir à nouveau le formulaire.
 
 ## Consultation et gestion des investissements
 
 - Gérer investissements
-  - En tant que titulaire d'un compte-titres, je veux pouvoir accéder aux actions de gestion de mes investissements, afin d'acheter, de vendre mes placements ou de réévaluer mon profil d'investisseur.
+  - En tant que client, je veux pouvoir gérer mes investissements afin d'acheter ou de vendre des placements et de modifier mon profil.
   ### Critères d'acceptation :
-    - Dans "Modifier portefeuille", la gestion des investissements est proposée lorsque le portefeuille sélectionné contient un compte-titres.
-    - Sans compte-titres dans ce portefeuille, l'option de gestion des investissements n'est pas accessible.
-    - L'application lui propose les opérations d'achat et de vente de placements.
-    - L'application lui permet aussi d'accéder à la procédure de modification de son profil d'investisseur.
+  - Le portefeuille sélectionné doit contenir un compte-titres.
 
 - Voir placements disponibles
-  - En tant que titulaire d'un compte-titres, je veux pouvoir voir les placements que je peux acheter et consulter leur historique même si je ne les détiens pas, afin d'évaluer les investissements envisageables.
+  - En tant que client, je veux pouvoir voir les placements disponibles et leur historique afin de choisir ceux qui m'intéressent.
   ### Critères d'acceptation :
-    - La liste ne présente que les placements compatibles avec le profil d'investisseur attribué au client.
-    - Les placements disponibles respectent la devise du compte-titres ou du compartiment multidevises sélectionné.
-    - Pour chaque placement proposé, le client peut consulter au minimum son nom, son type et son code ISIN.
+  - Le client doit posséder un compte-titres et un profil d'investisseur validé.
+  - Les placements affichés doivent être compatibles avec son profil et la devise de son compte-titres.
+  - Le client peut consulter l'historique d'un placement même s'il ne le possède pas.
 
 - Filtrer placements en fonction du profil
-  - En tant que titulaire d'un compte-titres, je veux que les placements disponibles soient filtrés en fonction de mon profil d'investisseur, afin de ne voir comme accessibles que les investissements adaptés au risque qui m'est autorisé.
+  - En tant que client, je veux que les placements soient filtrés selon mon profil afin de voir ceux que je peux acheter.
   ### Critères d'acceptation :
-    - Le filtrage utilise le profil validé par l'institution financière.
-    - Les placements incompatibles avec ce profil ne sont pas accessibles à l'achat.
+  - Le client doit avoir un profil d'investisseur validé par la banque.
+  - Les placements qui ne correspondent pas à son profil ne doivent pas être proposés à l'achat.
 
 - Acheter placements
-  - En tant que titulaire d'un compte-titres, je veux pouvoir acheter un placement financier disponible, afin de l'ajouter à mes investissements.
+  - En tant que client, je veux pouvoir acheter des placements afin de les ajouter à mon compte-titres.
   ### Critères d'acceptation :
-    - Le client possède un compte-titres et un profil d'investisseur attribué par l'institution financière.
-    - Le placement choisi est compatible avec son profil et avec la devise du compte-titres ou de son compartiment.
-    - Le client doit disposer des fonds nécessaires à l'achat et aux frais associés.
+  - Le client doit posséder un compte-titres et un profil d'investisseur validé.
+  - Le placement doit correspondre à son profil et à la devise du compte-titres.
+  - Le client doit avoir assez d'argent pour payer l'achat et les frais.
 
 - Vendre placements
-  - En tant que titulaire d'un compte-titres, je veux pouvoir vendre un placement que je détiens, afin de récupérer l'argent de cette vente sur l'un de mes comptes.
+  - En tant que client, je veux pouvoir vendre mes placements afin de récupérer mon argent.
   ### Critères d'acceptation :
-    - Le placement à vendre est présent dans un compte-titres du client.
-    - La quantité vendue est positive et ne dépasse pas la quantité détenue.
-    - L'argent reçu après la vente est versé sur un compte appartenant au client.
+  - Le client doit posséder le placement qu'il veut vendre.
+  - La quantité à vendre doit être supérieure à zéro et ne peut pas dépasser la quantité détenue.
+  - L'argent de la vente doit être versé sur un compte du client.
 
 - Choix du compte courant pour réception d'argent
-  - En tant que client souhaitant vendre un placement, je veux pouvoir sélectionner un compte courant pour recevoir le produit de la vente, afin de décider où sera versé l'argent récupéré.
+  - En tant que client, je veux pouvoir choisir le compte courant sur lequel recevoir l'argent de la vente d'un placement afin de décider où cet argent sera versé.
   ### Critères d'acceptation :
-    - Le client doit être en train d'effectuer une vente de placements.
-    - Le client doit posséder au moins un compte courant pouvant recevoir l'argent.
+  - Le client doit être en train de vendre un placement.
+  - Le client doit posséder au moins un compte courant pouvant recevoir l'argent.
 
 ## Visualisation et historique
 
 - Visualiser placements
-  - En tant que titulaire d'un compte-titres, je veux pouvoir visualiser les placements que je détiens, afin de connaître la composition et la valeur de mes investissements.
+  - En tant que client, je veux pouvoir voir les placements de mon compte-titres afin de connaître leur valeur.
   ### Critères d'acceptation :
-   - Le portefeuille sélectionné doit contenir un compte-titres.
+  - Le portefeuille sélectionné doit contenir un compte-titres.
 
 - Visualiser historique des placements détenus
-  - En tant que titulaire d'un compte-titres, je veux pouvoir consulter les données historiques de mes placements, afin de suivre leur évolution dans le temps.
+  - En tant que client, je veux pouvoir consulter l'historique de mes placements afin de voir leur évolution.
   ### Critères d'acceptation :
-    - Le client doit détenir au moins un placement dont les données historiques sont disponibles.
+  - Le client doit posséder au moins un placement avec un historique disponible.
 
 - Évolution de rendements et coûts de placements
-  - En tant que titulaire d'un compte-titres, je veux pouvoir suivre l'évolution du rendement et des coûts de mes placements, afin de comprendre leur performance et les frais associés.
+  - En tant que client, je veux pouvoir voir l'évolution des rendements et des frais de mes placements afin de savoir combien ils rapportent et coûtent.
   ### Critères d'acceptation :
-    - Le client doit détenir au moins un placement.
-    - Des données de rendement et de coûts doivent être disponibles pour la période consultée.
-
+  - Le client doit posséder au moins un placement.
+  - Des données de rendement et de frais doivent être disponibles pour la période choisie.
 
 - Exporter données des placements
-  - En tant que titulaire d'un compte-titres, je veux pouvoir exporter les données de placements que je visualise, afin de les conserver et de les analyser hors de l'application.
+  - En tant que client, je veux pouvoir exporter les données de mes placements afin de les conserver ou de les partager.
   ### Critères d'acceptation :
-    - Des données de placements doivent être disponibles à l'exportation.
-
+  - Le client doit avoir des données de placements à exporter.
+  - L'exportation doit être possible en CSV et en JSON.
 
 # Application bancaire
 
 ## Profil d'investisseur
 
 - Traiter une demande de profil investisseur
-  - En tant qu'institution financière, je veux pouvoir recevoir et examiner le questionnaire d'un client souhaitant investir, afin de valider les informations nécessaires à l'attribution de son profil d'investisseur.
+  - En tant qu'institution financière, je veux pouvoir traiter le formulaire d'un client afin de déterminer son profil d'investisseur.
   ### Critères d'acceptation :
-    - Une demande de profil d'investisseur doit avoir été envoyée par l'un de ses clients.
+  - Un client de l'institution doit avoir envoyé un formulaire de profil d'investisseur.
 
 - Donner un profil à l'utilisateur
-  - En tant qu'institution financière, je veux pouvoir attribuer à un client un profil d'investisseur à partir de son questionnaire validé, afin de déterminer les placements financiers auxquels il peut accéder.
+  - En tant qu'institution financière, je veux pouvoir attribuer un profil d'investisseur à un client afin de définir les placements auxquels il a accès.
   ### Critères d'acceptation :
-    - Le questionnaire du client doit avoir été rempli et validé.
-    - Le profil attribué appartient à l'une des cinq catégories : conservateur, défensif, neutre, dynamique ou agressif.
-
+  - Le formulaire du client doit avoir été rempli et validé.
+  - Le profil attribué doit être conservateur, défensif, neutre, dynamique ou agressif.
