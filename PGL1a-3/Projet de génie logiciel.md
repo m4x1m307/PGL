@@ -198,70 +198,128 @@
     - Le montant à virer doit être inférieur ou égal au montant sur le compte, mais aussi positif
 # Application bancaire
 ## Session
-- Traiter une demande 
-  - En tant qu'institution financière,
-  je veux pouvoir regarder les identifiants dans une demande de portefeuille financier d'un nouveau client,
-  afin de vérifier s'il est client de l'institution et poursuivre la procédure de réponse à cette demande.
-    #### Critères d'acceptation : 
-     - 1
-     - 2
+
+- Exécuter session
+  - En tant qu'institution financière, je veux pouvoir accéder aux différentes fonctionnalités de l'application afin de gérer mes clients et leurs produits financiers.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée à l'application.
+- Se connecter
+  - En tant qu'institution financière, je veux pouvoir me connecter à l'application afin de gérer mes clients et leurs produits financiers.
+  #### Critères d'acceptation :
+  - L'institution doit posséder un login et un mot de passe.
+  - Le login et le mot de passe doivent être corrects.
+- Changer MDP
+  - En tant qu'institution financière, je veux pouvoir changer mon mot de passe afin de sécuriser mon compte.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+  - L'ancien mot de passe doit être correct.
+- Fermer session
+  - En tant qu'institution financière, je veux pouvoir me déconnecter de l'application afin de terminer ma session.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+- Traiter une demande
+  - En tant qu'institution financière, je veux pouvoir traiter les demandes de mes clients afin de les accepter ou de les refuser.
+  #### Critères d'acceptation :
+  - L'application doit avoir reçu au moins une demande.
+  - La demande doit concerner un client de l'institution financière.
 
 ## Clients
 
+- Gérer clients
+  - En tant qu'institution financière, je veux pouvoir gérer mes clients afin d'ajouter ou de supprimer des clients de mon institution.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée à l'application.
+- Ajouter un client
+  - En tant qu'institution financière, je veux pouvoir ajouter un nouveau client afin de lui proposer mes produits financiers.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+  - Les informations du nouveau client doivent être renseignées.
+  - Le client ne doit pas déjà être enregistré dans cette institution.
+- Supprimer un client
+  - En tant qu'institution financière, je veux pouvoir supprimer un client afin qu'il ne fasse plus partie de mes clients.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+  - Le client doit déjà faire partie de l'institution financière.
+
 ## Virements
-- Traiter demande de gestion de virement
-  - En tant qu'institution financière,
-  je veux pouvoir traiter une demande de gestion de virement,
-  afin que mes clients puissent avoir accès (ou non) à la fonctionnalité.
-    #### Critères d'acceptation :
-    - L'application doit avoir reçue au moins une demande pour obtenir la fonctionnalité de la part d'un client
+
+- Traiter une demande de fonctionnalité de virement
+  - En tant qu'institution financière, je veux pouvoir traiter une demande de fonctionnalité de virement afin de permettre ou non à mes clients d'effectuer des virements.
+  #### Critères d'acceptation :
+  - L'application doit avoir reçu une demande de fonctionnalité de virement.
+  - Le client doit posséder au moins un compte dans l'institution financière.
 - Approuver une demande
-  - En tant qu'institution financière,
-  je veux pouvoir accepté une demande pour la fonctionnalité de virement pour des clients,
-  afin qu'ils puissent effectuer des virements avec leurs comptes 
-    #### Critères d'acceptation :
-    - Le client doit posséder au moins un compte de l'institution financière pour laquelle il a fait une demande 
-    - Le client doit avoir effectuer une demande au préalable
-    - Une fois la demande acceptée pour un client, l'application doit retenir que le client en question a déjà fait une demande et qu'elle a été acceptée
+  - En tant qu'institution financière, je veux pouvoir accepter une demande de fonctionnalité de virement afin que mon client puisse effectuer des virements.
+  #### Critères d'acceptation :
+  - Le client doit avoir effectué une demande au préalable.
+  - Le client doit posséder au moins un compte dans l'institution financière.
 - Refuser une demande
-  - En tant qu'institution financière,
-  je veux pouvoir refuser une demande pour la fonctionnalité de virement pour des clients,
-  afin d'empêcher des clients qui ne sont pas considérés comme apte à avoir cette fonctionnalité, de l'obtenir
-    #### Critères d'acceptation
-    - Le client doit avoir effectuer une demande au préalable
+  - En tant qu'institution financière, je veux pouvoir refuser une demande de fonctionnalité de virement afin d'empêcher un client d'utiliser cette fonctionnalité.
+  #### Critères d'acceptation :
+  - Le client doit avoir effectué une demande au préalable.
+  - La demande doit concerner l'institution financière connectée.
+
 ## Produits financiers
+
+- Gérer produits financiers
+  - En tant qu'institution financière, je veux pouvoir gérer les produits financiers de mes clients afin d'ouvrir ou de clôturer leurs produits.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+  - Les produits financiers doivent appartenir à son institution.
+- Ouvrir un produit financier
+  - En tant qu'institution financière, je veux pouvoir ouvrir un nouveau produit financier pour un client afin qu'il puisse l'utiliser.
+  #### Critères d'acceptation :
+  - Le client doit faire partie de l'institution financière.
+  - Le produit financier doit être proposé par l'institution.
+- Clôturer un produit financier
+  - En tant qu'institution financière, je veux pouvoir clôturer un produit financier afin de mettre fin à son utilisation par un client.
+  #### Critères d'acceptation :
+  - Le produit financier doit être ouvert.
+  - Le produit doit appartenir à un client de l'institution financière.
 - Traiter une demande de gestion de produits
-  - En tant qu'institution financière,
-  je veux pouvoir traiter une demande de gestion de produit introduite par un client,
-  afin que celui ci puisse gérer ses produits comme bon lui semble.
-    #### Critères d'acceptation :
-    - Le client doit avoir envoyé une demande au préalable
+  - En tant qu'institution financière, je veux pouvoir traiter les demandes de gestion de produits de mes clients afin de répondre à leurs demandes d'ouverture ou de fermeture.
+  #### Critères d'acceptation :
+  - Le client doit avoir envoyé une demande au préalable.
+  - La demande doit concerner un produit financier de l'institution.
 - Traiter une demande d'ouverture
-  - En tant qu'institution financière,
-  je veux pouvoir traiter une demande d'ouverture de produit,
-  afin que le client ayant fait la demande puisse ajouter un produit à son portefeuille.
-    #### Critères d'acceptation :
-    - Le client doit avoir fait cette demande spécifique au préalable
-    - Le produit doit figurer parmi les produits que l'institution financière propose
+  - En tant qu'institution financière, je veux pouvoir traiter une demande d'ouverture de produit afin de permettre à un client de souscrire à un nouveau produit financier.
+  #### Critères d'acceptation :
+  - Le client doit avoir effectué une demande d'ouverture.
+  - Le produit doit faire partie des produits proposés par l'institution financière.
+  - Le client doit faire partie de l'institution financière.
 - Traiter une demande de fermeture
-  - En tant qu'institution financière,
-  je veux pouvoir traiter une demande de fermeture de produit,
-  afin de permettre à un client de ne plus vouloir gérer ce produit.
-    #### Critères d'acceptation :
-    - Le client doit avoir ce produit déjà ouvert dans son portefeuille au moment de la demande
+  - En tant qu'institution financière, je veux pouvoir traiter une demande de fermeture de produit afin de permettre à un client de clôturer un produit financier.
+  #### Critères d'acceptation :
+  - Le client doit avoir effectué une demande de fermeture.
+  - Le produit financier doit déjà être ouvert.
+  - Le produit doit appartenir à un client de l'institution financière.
+
 ## Lister des données
+
+- Lister les clients
+  - En tant qu'institution financière, je veux pouvoir afficher la liste de mes clients afin de consulter leurs informations.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+- Lister les produits financiers liés à un client
+  - En tant qu'institution financière, je veux pouvoir afficher les produits financiers d'un client afin de consulter les produits qu'il possède dans mon institution.
+  #### Critères d'acceptation :
+  - Le client doit faire partie de l'institution financière.
+  - Seuls les produits financiers liés à cette institution doivent être affichés.
+- Filtrer produits
+  - En tant qu'institution financière, je veux pouvoir filtrer les produits financiers afin de trouver plus facilement les produits que je recherche.
+  #### Critères d'acceptation :
+  - L'institution financière doit être en train de consulter une liste de produits financiers.
+  - L'application doit permettre de sélectionner un ou plusieurs critères de filtrage.
+
 ## Exportation et importation
+
 - Exporter données
-  - En tant qu'institution financière,
-  je veux pouvoir exporter des données que je suis en train de lister,
-  afin de les imprimer ou de les partager.
-    #### Critères d'acceptation :
-    - L'application doit proposer au moins les formats CSV et JSON pour l'exportation
-    - Les données listées ne peuvent pas être vides
+  - En tant qu'institution financière, je veux pouvoir exporter les données que je consulte afin de les imprimer ou de les partager ou de les analiser.
+  #### Critères d'acceptation :
+  - L'institution financière doit avoir des données à exporter.
+  - L'application doit proposer les formats CSV et JSON.
 - Importer fichiers de données
-  - En tant qu'institution financière,
-  je veux pouvoir importer des fichiers de données,
-  afin de peupler la base données depuis l'application.
-    #### Critères d'acceptation :
-    - Les fichiers ne contiennent que des informations appartenant à l’institution financière qui est actuellement connectée à l’application.
-    - L'application propose une option pour directement importer un ou plusieurs fichiers
+  - En tant qu'institution financière, je veux pouvoir importer des fichiers de données afin d'ajouter des informations dans la base de données.
+  #### Critères d'acceptation :
+  - L'institution financière doit être connectée.
+  - Les fichiers doivent contenir uniquement des informations appartenant à l'institution financière connectée.
